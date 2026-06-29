@@ -31,7 +31,6 @@
     line-height: 1.6;
   }
 
-  /* NAV */
   nav {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -52,49 +51,23 @@
     letter-spacing: -0.5px;
   }
   .logo span { color: var(--accent); }
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--text-primary); }
   .nav-actions { display: flex; align-items: center; gap: 1rem; }
   .btn-cart {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.5rem 1.2rem;
-    border-radius: 8px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background 0.2s;
+    background: var(--accent); color: white; border: none;
+    padding: 0.5rem 1.2rem; border-radius: 8px; font-size: 0.875rem;
+    font-weight: 600; cursor: pointer; display: flex; align-items: center;
+    gap: 0.5rem; transition: background 0.2s;
   }
   .btn-cart:hover { background: var(--accent-dark); }
   .cart-count {
-    background: white;
-    color: var(--accent);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: white; color: var(--accent); border-radius: 50%;
+    width: 20px; height: 20px; font-size: 0.75rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
   }
 
-  /* HERO */
   .hero {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -106,347 +79,93 @@
     margin: 0 auto;
     align-items: center;
   }
-  .hero-eyebrow {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1rem;
-  }
-  .hero h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -1px;
-    margin-bottom: 1.25rem;
-    color: var(--text-primary);
-  }
-  .hero p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    max-width: 420px;
-  }
+  .hero-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+  .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; letter-spacing: -1px; margin-bottom: 1.25rem; }
+  .hero p { color: var(--text-secondary); font-size: 1rem; margin-bottom: 2rem; max-width: 420px; }
   .hero-cta { display: flex; gap: 1rem; align-items: center; }
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.75rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
-  }
+  .btn-primary { background: var(--accent); color: white; border: none; padding: 0.8rem 1.75rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background 0.2s, transform 0.15s; }
   .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
-  .btn-secondary {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--text-primary);
-    padding: 0.8rem 1.75rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .btn-secondary:hover { background: var(--bg); border-color: #9CA3AF; }
-  .hero-stats {
-    display: flex;
-    gap: 2.5rem;
-    margin-top: 2.5rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-  }
-  .stat-value {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-  }
+  .btn-secondary { background: none; border: 1px solid var(--border); color: var(--text-primary); padding: 0.8rem 1.75rem; border-radius: 8px; font-size: 0.9rem; font-weight: 500; cursor: pointer; }
+  .hero-stats { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .stat-value { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; }
   .stat-label { font-size: 0.8rem; color: var(--text-secondary); margin-top: 2px; }
+  .hero-visual { background: linear-gradient(135deg, var(--accent-light) 0%, #DBEAFE 100%); border-radius: 16px; height: 340px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid #BFDBFE; }
+  .hero-device { font-size: 7rem; animation: float 4s ease-in-out infinite; }
+  @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  .hero-badge { position: absolute; bottom: 1.5rem; right: 1.5rem; background: white; border: 1px solid var(--border); border-radius: 10px; padding: 0.75rem 1rem; font-size: 0.8rem; font-weight: 600; color: var(--success); display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .dot-green { width: 8px; height: 8px; background: var(--success); border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 
-  /* Hero visual */
-  .hero-visual {
-    background: linear-gradient(135deg, var(--accent-light) 0%, #DBEAFE 100%);
-    border-radius: 16px;
-    height: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #BFDBFE;
-  }
-  .hero-device {
-    font-size: 7rem;
-    filter: drop-shadow(0 20px 40px rgba(37,99,235,0.2));
-    animation: float 4s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-  }
-  .hero-badge {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 0.75rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--success);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  .dot-green {
-    width: 8px; height: 8px;
-    background: var(--success);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
+  .main-container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+  .section-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.3px; }
+  .see-all { font-size: 0.85rem; color: var(--accent); font-weight: 500; cursor: pointer; }
+  .categories { display: flex; gap: 0.75rem; margin-bottom: 3rem; flex-wrap: wrap; }
+  .cat-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 100px; padding: 0.5rem 1.25rem; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; color: var(--text-secondary); }
+  .cat-chip:hover, .cat-chip.active { background: var(--accent); border-color: var(--accent); color: white; }
 
-  /* MAIN LAYOUT */
-  .main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-
-  /* CATEGORIES */
-  .section-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-  }
-  .section-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-  }
-  .see-all {
-    font-size: 0.85rem;
-    color: var(--accent);
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .categories {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-  }
-  .cat-chip {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 100px;
-    padding: 0.5rem 1.25rem;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    color: var(--text-secondary);
-  }
-  .cat-chip:hover, .cat-chip.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: white;
-  }
-
-  /* PRODUCTS GRID */
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.25rem;
-  }
-  .product-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: box-shadow 0.2s, transform 0.2s;
-    cursor: pointer;
-  }
-  .product-card:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-  }
-  .product-image {
-    background: var(--bg);
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4.5rem;
-    position: relative;
-    border-bottom: 1px solid var(--border);
-  }
-  .badge {
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-    background: var(--badge);
-    color: var(--badge-text);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0.25rem 0.6rem;
-    border-radius: 100px;
-  }
-  .badge.new {
-    background: #DCFCE7;
-    color: #166534;
-  }
-  .badge.promo {
-    background: #FEE2E2;
-    color: #991B1B;
-  }
-  .wishlist-btn {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.2s;
-  }
+  .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+  .product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; cursor: pointer; }
+  .product-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.1); transform: translateY(-2px); }
+  .product-image { background: var(--bg); height: 190px; display: flex; align-items: center; justify-content: center; position: relative; border-bottom: 1px solid var(--border); overflow: hidden; }
+  .product-image img { width: 100%; height: 100%; object-fit: contain; padding: 1rem; }
+  .badge { position: absolute; top: 0.75rem; left: 0.75rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 100px; background: var(--badge); color: var(--badge-text); }
+  .badge.new { background: #DCFCE7; color: #166534; }
+  .badge.promo { background: #FEE2E2; color: #991B1B; }
+  .wishlist-btn { position: absolute; top: 0.75rem; right: 0.75rem; background: white; border: 1px solid var(--border); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 0.9rem; transition: all 0.2s; }
   .wishlist-btn:hover { border-color: #EF4444; background: #FFF5F5; }
   .product-info { padding: 1rem 1.1rem 1.2rem; }
   .product-brand { font-size: 0.72rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
-  .product-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-primary); }
+  .product-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.5rem; }
   .product-rating { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.8rem; }
   .stars { color: #F59E0B; font-size: 0.75rem; letter-spacing: 1px; }
   .rating-count { font-size: 0.75rem; color: var(--text-secondary); }
   .product-footer { display: flex; align-items: center; justify-content: space-between; }
-  .price { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); }
+  .price { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; }
   .price-old { font-size: 0.8rem; color: var(--text-secondary); text-decoration: line-through; margin-left: 0.4rem; font-weight: 400; }
-  .add-btn {
-    background: var(--accent-light);
-    color: var(--accent);
-    border: none;
-    border-radius: 8px;
-    padding: 0.45rem 0.9rem;
-    font-size: 0.82rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
+  .add-btn { background: var(--accent-light); color: var(--accent); border: none; border-radius: 8px; padding: 0.45rem 0.9rem; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
   .add-btn:hover { background: var(--accent); color: white; }
 
-  /* PROMO BANNER */
-  .promo-banner {
-    background: var(--accent);
-    border-radius: 14px;
-    padding: 2.5rem;
-    margin: 3rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    gap: 2rem;
-  }
-  .promo-banner h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
+  .promo-banner { background: var(--accent); border-radius: 14px; padding: 2.5rem; margin: 3rem 0; display: flex; align-items: center; justify-content: space-between; color: white; gap: 2rem; }
+  .promo-banner h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
   .promo-banner p { opacity: 0.85; font-size: 0.9rem; }
-  .promo-code {
-    background: rgba(255,255,255,0.15);
-    border: 1px dashed rgba(255,255,255,0.5);
-    border-radius: 8px;
-    padding: 0.5rem 1.25rem;
-    font-family: monospace;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin-top: 0.75rem;
-    display: inline-block;
-  }
-  .btn-white {
-    background: white;
-    color: var(--accent);
-    border: none;
-    padding: 0.8rem 1.75rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: transform 0.15s;
-  }
-  .btn-white:hover { transform: translateY(-1px); }
+  .promo-code { background: rgba(255,255,255,0.15); border: 1px dashed rgba(255,255,255,0.5); border-radius: 8px; padding: 0.5rem 1.25rem; font-family: monospace; font-size: 1rem; font-weight: 700; letter-spacing: 0.1em; margin-top: 0.75rem; display: inline-block; }
+  .btn-white { background: white; color: var(--accent); border: none; padding: 0.8rem 1.75rem; border-radius: 8px; font-size: 0.9rem; font-weight: 700; cursor: pointer; white-space: nowrap; }
 
-  /* FEATURES */
-  .features {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 3rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--border);
-  }
-  .feature {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    text-align: center;
-  }
+  .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; padding-top: 3rem; border-top: 1px solid var(--border); }
+  .feature { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; text-align: center; }
   .feature-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
   .feature-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 0.3rem; }
   .feature-desc { font-size: 0.78rem; color: var(--text-secondary); }
 
-  /* FOOTER */
-  footer {
-    background: var(--text-primary);
-    color: #9CA3AF;
-    padding: 2.5rem;
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 0.85rem;
-  }
-  footer strong { color: white; }
-
-  /* CART NOTIFICATION */
-  .toast {
+  /* WHATSAPP BUTTON */
+  .whatsapp-btn {
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
-    background: var(--text-primary);
+    left: 2rem;
+    background: #25D366;
     color: white;
+    border: none;
+    border-radius: 50px;
     padding: 0.9rem 1.5rem;
-    border-radius: 10px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    z-index: 1000;
-    transform: translateY(120%);
-    transition: transform 0.3s ease;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    z-index: 999;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
+  .whatsapp-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+  .whatsapp-icon { font-size: 1.3rem; }
+
+  footer { background: var(--text-primary); color: #9CA3AF; padding: 2.5rem; margin-top: 4rem; text-align: center; font-size: 0.85rem; }
+  footer strong { color: white; }
+
+  .toast { position: fixed; bottom: 2rem; right: 2rem; background: var(--text-primary); color: white; padding: 0.9rem 1.5rem; border-radius: 10px; font-size: 0.875rem; font-weight: 500; z-index: 1000; transform: translateY(120%); transition: transform 0.3s ease; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
   .toast.show { transform: translateY(0); }
 
   @media (max-width: 768px) {
@@ -460,7 +179,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo">Tech<span>Nova</span></div>
   <ul class="nav-links">
@@ -477,7 +195,6 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <div style="background:var(--surface); border-bottom:1px solid var(--border);">
   <div class="hero">
     <div>
@@ -486,40 +203,24 @@
       <p>Smartphones, ordinateurs, audio — les meilleures marques aux meilleurs prix, livrés en 24h.</p>
       <div class="hero-cta">
         <button class="btn-primary">Découvrir les produits</button>
-        <button class="btn-secondary">Voir les offres</button>
+        <a href="https://wa.me/33619538517" class="btn-secondary" style="text-decoration:none; display:inline-block; text-align:center;">💬 Nous contacter</a>
       </div>
       <div class="hero-stats">
-        <div>
-          <div class="stat-value">+2 400</div>
-          <div class="stat-label">Produits disponibles</div>
-        </div>
-        <div>
-          <div class="stat-value">4.9★</div>
-          <div class="stat-label">Note clients</div>
-        </div>
-        <div>
-          <div class="stat-value">24h</div>
-          <div class="stat-label">Livraison express</div>
-        </div>
+        <div><div class="stat-value">+2 400</div><div class="stat-label">Produits disponibles</div></div>
+        <div><div class="stat-value">4.9★</div><div class="stat-label">Note clients</div></div>
+        <div><div class="stat-value">24h</div><div class="stat-label">Livraison express</div></div>
       </div>
     </div>
     <div class="hero-visual">
       <div class="hero-device">💻</div>
-      <div class="hero-badge">
-        <div class="dot-green"></div>
-        Stock disponible
-      </div>
+      <div class="hero-badge"><div class="dot-green"></div>Stock disponible</div>
     </div>
   </div>
 </div>
 
-<!-- MAIN -->
 <div class="main-container">
 
-  <!-- CATEGORIES -->
-  <div class="section-header">
-    <div class="section-title">Parcourir par catégorie</div>
-  </div>
+  <div class="section-header"><div class="section-title">Parcourir par catégorie</div></div>
   <div class="categories">
     <div class="cat-chip active" onclick="filterCat(this)">Tout voir</div>
     <div class="cat-chip" onclick="filterCat(this)">📱 Smartphones</div>
@@ -530,26 +231,23 @@
     <div class="cat-chip" onclick="filterCat(this)">🎮 Gaming</div>
   </div>
 
-  <!-- PRODUCTS -->
   <div class="section-header">
     <div class="section-title">Produits populaires</div>
     <a href="#" class="see-all">Voir tout →</a>
   </div>
-  <div class="products-grid" id="productsGrid">
+
+  <div class="products-grid">
 
     <div class="product-card">
       <div class="product-image">
-        📱
+        <img src="https://images.samsung.com/is/image/samsung/p6pim/fr/2501/gallery/fr-galaxy-s25-ultra-s938-sm-s938bztheub-thumb-544164818" alt="Samsung Galaxy S25 Ultra" onerror="this.style.fontSize='4rem';this.innerHTML='📱'">
         <div class="badge new">Nouveau</div>
         <button class="wishlist-btn">♡</button>
       </div>
       <div class="product-info">
         <div class="product-brand">Samsung</div>
         <div class="product-name">Galaxy S25 Ultra 256Go</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(248)</span>
-        </div>
+        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(248)</span></div>
         <div class="product-footer">
           <div><span class="price">1 199 €</span></div>
           <button class="add-btn" onclick="addToCart('Galaxy S25 Ultra')">+ Ajouter</button>
@@ -559,17 +257,14 @@
 
     <div class="product-card">
       <div class="product-image">
-        💻
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-config-20220606?wid=820&hei=498&fmt=jpeg&qlt=90&.v=1654122872792" alt="MacBook Air M3" onerror="this.style.fontSize='4rem';this.innerHTML='💻'">
         <div class="badge promo">−15%</div>
         <button class="wishlist-btn">♡</button>
       </div>
       <div class="product-info">
         <div class="product-brand">Apple</div>
         <div class="product-name">MacBook Air M3 13"</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(512)</span>
-        </div>
+        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(512)</span></div>
         <div class="product-footer">
           <div><span class="price">1 099 €</span><span class="price-old">1 299 €</span></div>
           <button class="add-btn" onclick="addToCart('MacBook Air M3')">+ Ajouter</button>
@@ -579,16 +274,13 @@
 
     <div class="product-card">
       <div class="product-image">
-        🎧
+        <img src="https://www.sony.fr/image/5d02da5df552836db894cead8a68f6f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Sony WH-1000XM6" onerror="this.style.fontSize='4rem';this.innerHTML='🎧'">
         <button class="wishlist-btn">♡</button>
       </div>
       <div class="product-info">
         <div class="product-brand">Sony</div>
         <div class="product-name">WH-1000XM6 Casque ANC</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(891)</span>
-        </div>
+        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(891)</span></div>
         <div class="product-footer">
           <div><span class="price">349 €</span></div>
           <button class="add-btn" onclick="addToCart('Sony WH-1000XM6')">+ Ajouter</button>
@@ -598,17 +290,14 @@
 
     <div class="product-card">
       <div class="product-image">
-        ⌚
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MYE33ref_VW_34FR+watch-45-alum-midnight-nc-10s_VW_34FR_WF_CO?wid=700&hei=700&trim=1&fmt=p-jpg&qlt=95&.v=1724926862680" alt="Apple Watch Series 10" onerror="this.style.fontSize='4rem';this.innerHTML='⌚'">
         <div class="badge new">Nouveau</div>
         <button class="wishlist-btn">♡</button>
       </div>
       <div class="product-info">
         <div class="product-brand">Apple</div>
         <div class="product-name">Apple Watch Series 10</div>
-        <div class="product-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="rating-count">(337)</span>
-        </div>
+        <div class="product-rating"><span class="stars">★★★★☆</span><span class="rating-count">(337)</span></div>
         <div class="product-footer">
           <div><span class="price">449 €</span></div>
           <button class="add-btn" onclick="addToCart('Apple Watch S10')">+ Ajouter</button>
@@ -618,17 +307,14 @@
 
     <div class="product-card">
       <div class="product-image">
-        🎮
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$" alt="PlayStation 5 Slim" onerror="this.style.fontSize='4rem';this.innerHTML='🎮'">
         <div class="badge promo">−20%</div>
         <button class="wishlist-btn">♡</button>
       </div>
       <div class="product-info">
         <div class="product-brand">Sony</div>
         <div class="product-name">PlayStation 5 Slim</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(1 204)</span>
-        </div>
+        <div class="product-rating"><span class="stars">★★★★★</span><span class="rating-count">(1 204)</span></div>
         <div class="product-footer">
           <div><span class="price">399 €</span><span class="price-old">499 €</span></div>
           <button class="add-btn" onclick="addToCart('PS5 Slim')">+ Ajouter</button>
@@ -638,16 +324,13 @@
 
     <div class="product-card">
       <div class="product-image">
-        📷
+        <img src="https://www.canon.fr/media/EOS_R50_Body_front_slant_without_lens_tcm14-2396395.jpg" alt="Canon EOS R50" onerror="this.style.fontSize='4rem';this.innerHTML='📷'">
         <button class="wishlist-btn">♡</button>
       </div>
       <div class="product-info">
         <div class="product-brand">Canon</div>
         <div class="product-name">EOS R50 + 18-45mm Kit</div>
-        <div class="product-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="rating-count">(178)</span>
-        </div>
+        <div class="product-rating"><span class="stars">★★★★☆</span><span class="rating-count">(178)</span></div>
         <div class="product-footer">
           <div><span class="price">699 €</span></div>
           <button class="add-btn" onclick="addToCart('Canon EOS R50')">+ Ajouter</button>
@@ -657,787 +340,31 @@
 
   </div>
 
-  <!-- PROMO BANNER -->
   <div class="promo-banner">
     <div>
       <h2>🔥 Offre spéciale de bienvenue</h2>
       <p>Obtenez 10% de réduction sur votre première commande dès 150€ d'achat.</p>
       <div class="promo-code">BIENVENUE10</div>
     </div>
-    <button class="btn-white">J'en profite →</button>
+    <a href="https://wa.me/33619538517" style="text-decoration:none;">
+      <button class="btn-white">💬 Commander via WhatsApp</button>
+    </a>
   </div>
 
-  <!-- FEATURES -->
   <div class="features">
-    <div class="feature">
-      <div class="feature-icon">🚀</div>
-      <div class="feature-title">Livraison 24h</div>
-      <div class="feature-desc">Expédié le jour même pour toute commande avant 14h</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🔒</div>
-      <div class="feature-title">Paiement sécurisé</div>
-      <div class="feature-desc">Carte, PayPal, virement — 100% sécurisé</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">↩️</div>
-      <div class="feature-title">Retour 30 jours</div>
-      <div class="feature-desc">Satisfait ou remboursé, sans condition</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🛡️</div>
-      <div class="feature-title">Garantie 2 ans</div>
-      <div class="feature-desc">Tous nos produits sont garantis constructeur</div>
-    </div>
+    <div class="feature"><div class="feature-icon">🚀</div><div class="feature-title">Livraison 24h</div><div class="feature-desc">Expédié le jour même avant 14h</div></div>
+    <div class="feature"><div class="feature-icon">🔒</div><div class="feature-title">Paiement sécurisé</div><div class="feature-desc">Carte, PayPal, virement</div></div>
+    <div class="feature"><div class="feature-icon">↩️</div><div class="feature-title">Retour 30 jours</div><div class="feature-desc">Satisfait ou remboursé</div></div>
+    <div class="feature"><div class="feature-icon">🛡️</div><div class="feature-title">Garantie 2 ans</div><div class="feature-desc">Garantie constructeur incluse</div></div>
   </div>
 
 </div>
 
-<!-- FOOTER -->
 <footer>
   <strong>TechNova</strong> — Votre boutique électronique de confiance<br>
-  <span style="font-size:0.78rem; margin-top:0.5rem; display:block;">© 2025 TechNova. Tous droits réservés. · Mentions légales · CGV · Contact</span>
+  <span style="margin-top:0.5rem; display:block;">📞 WhatsApp : <a href="https://wa.me/33619538517" style="color:#25D366;">06 19 53 85 17</a></span>
+  <span style="font-size:0.78rem; margin-top:0.5rem; display:block;">© 2025 TechNova. Tous droits réservés.</span>
 </footer>
 
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<script>
-  let cartCount = 0;
-
-  function addToCart(productName) {
-    cartCount++;
-    document.getElementById('cartCount').textContent = cartCount;
-    showToast('✓ ' + productName + ' ajouté au panier');
-  }
-
-  function showToast(msg) {
-    const toast = document.getElementById('toast');
-    toast.textContent = msg;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3000);
-  }
-
-  function openCart() {
-    if (cartCount === 0) {
-      showToast('🛒 Votre panier est vide');
-    } else {
-      showToast('🛒 ' + cartCount + ' article(s) dans votre panier');
-    }
-  }
-
-  function filterCat(el) {
-    document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('active'));
-    el.classList.add('active');
-  }
-</script>
-</body>
-</html>
-
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechNova – Électronique & Innovation</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bg: #F7F8FA;
-    --surface: #FFFFFF;
-    --border: #E4E7EC;
-    --text-primary: #111827;
-    --text-secondary: #6B7280;
-    --accent: #2563EB;
-    --accent-light: #EFF6FF;
-    --accent-dark: #1D4ED8;
-    --success: #16A34A;
-    --badge: #FEF3C7;
-    --badge-text: #92400E;
-  }
-
-  body {
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text-primary);
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  /* NAV */
-  nav {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  .logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    letter-spacing: -0.5px;
-  }
-  .logo span { color: var(--accent); }
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--text-primary); }
-  .nav-actions { display: flex; align-items: center; gap: 1rem; }
-  .btn-cart {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.5rem 1.2rem;
-    border-radius: 8px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: background 0.2s;
-  }
-  .btn-cart:hover { background: var(--accent-dark); }
-  .cart-count {
-    background: white;
-    color: var(--accent);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* HERO */
-  .hero {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 4rem 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
-  }
-  .hero-eyebrow {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1rem;
-  }
-  .hero h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -1px;
-    margin-bottom: 1.25rem;
-    color: var(--text-primary);
-  }
-  .hero p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    max-width: 420px;
-  }
-  .hero-cta { display: flex; gap: 1rem; align-items: center; }
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.75rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
-  }
-  .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
-  .btn-secondary {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--text-primary);
-    padding: 0.8rem 1.75rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .btn-secondary:hover { background: var(--bg); border-color: #9CA3AF; }
-  .hero-stats {
-    display: flex;
-    gap: 2.5rem;
-    margin-top: 2.5rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-  }
-  .stat-value {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
-  }
-  .stat-label { font-size: 0.8rem; color: var(--text-secondary); margin-top: 2px; }
-
-  /* Hero visual */
-  .hero-visual {
-    background: linear-gradient(135deg, var(--accent-light) 0%, #DBEAFE 100%);
-    border-radius: 16px;
-    height: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #BFDBFE;
-  }
-  .hero-device {
-    font-size: 7rem;
-    filter: drop-shadow(0 20px 40px rgba(37,99,235,0.2));
-    animation: float 4s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
-  }
-  .hero-badge {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 0.75rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--success);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  .dot-green {
-    width: 8px; height: 8px;
-    background: var(--success);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-  }
-
-  /* MAIN LAYOUT */
-  .main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-
-  /* CATEGORIES */
-  .section-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-  }
-  .section-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-  }
-  .see-all {
-    font-size: 0.85rem;
-    color: var(--accent);
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .categories {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-  }
-  .cat-chip {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 100px;
-    padding: 0.5rem 1.25rem;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    color: var(--text-secondary);
-  }
-  .cat-chip:hover, .cat-chip.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: white;
-  }
-
-  /* PRODUCTS GRID */
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.25rem;
-  }
-  .product-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: box-shadow 0.2s, transform 0.2s;
-    cursor: pointer;
-  }
-  .product-card:hover {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-  }
-  .product-image {
-    background: var(--bg);
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4.5rem;
-    position: relative;
-    border-bottom: 1px solid var(--border);
-  }
-  .badge {
-    position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
-    background: var(--badge);
-    color: var(--badge-text);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0.25rem 0.6rem;
-    border-radius: 100px;
-  }
-  .badge.new {
-    background: #DCFCE7;
-    color: #166534;
-  }
-  .badge.promo {
-    background: #FEE2E2;
-    color: #991B1B;
-  }
-  .wishlist-btn {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.2s;
-  }
-  .wishlist-btn:hover { border-color: #EF4444; background: #FFF5F5; }
-  .product-info { padding: 1rem 1.1rem 1.2rem; }
-  .product-brand { font-size: 0.72rem; color: var(--text-secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
-  .product-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-primary); }
-  .product-rating { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.8rem; }
-  .stars { color: #F59E0B; font-size: 0.75rem; letter-spacing: 1px; }
-  .rating-count { font-size: 0.75rem; color: var(--text-secondary); }
-  .product-footer { display: flex; align-items: center; justify-content: space-between; }
-  .price { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); }
-  .price-old { font-size: 0.8rem; color: var(--text-secondary); text-decoration: line-through; margin-left: 0.4rem; font-weight: 400; }
-  .add-btn {
-    background: var(--accent-light);
-    color: var(--accent);
-    border: none;
-    border-radius: 8px;
-    padding: 0.45rem 0.9rem;
-    font-size: 0.82rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .add-btn:hover { background: var(--accent); color: white; }
-
-  /* PROMO BANNER */
-  .promo-banner {
-    background: var(--accent);
-    border-radius: 14px;
-    padding: 2.5rem;
-    margin: 3rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    gap: 2rem;
-  }
-  .promo-banner h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  .promo-banner p { opacity: 0.85; font-size: 0.9rem; }
-  .promo-code {
-    background: rgba(255,255,255,0.15);
-    border: 1px dashed rgba(255,255,255,0.5);
-    border-radius: 8px;
-    padding: 0.5rem 1.25rem;
-    font-family: monospace;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin-top: 0.75rem;
-    display: inline-block;
-  }
-  .btn-white {
-    background: white;
-    color: var(--accent);
-    border: none;
-    padding: 0.8rem 1.75rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: transform 0.15s;
-  }
-  .btn-white:hover { transform: translateY(-1px); }
-
-  /* FEATURES */
-  .features {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 3rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--border);
-  }
-  .feature {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    text-align: center;
-  }
-  .feature-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
-  .feature-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 0.3rem; }
-  .feature-desc { font-size: 0.78rem; color: var(--text-secondary); }
-
-  /* FOOTER */
-  footer {
-    background: var(--text-primary);
-    color: #9CA3AF;
-    padding: 2.5rem;
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 0.85rem;
-  }
-  footer strong { color: white; }
-
-  /* CART NOTIFICATION */
-  .toast {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: var(--text-primary);
-    color: white;
-    padding: 0.9rem 1.5rem;
-    border-radius: 10px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    z-index: 1000;
-    transform: translateY(120%);
-    transition: transform 0.3s ease;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  }
-  .toast.show { transform: translateY(0); }
-
-  @media (max-width: 768px) {
-    .hero { grid-template-columns: 1fr; }
-    .hero-visual { display: none; }
-    .features { grid-template-columns: repeat(2, 1fr); }
-    .promo-banner { flex-direction: column; }
-    .nav-links { display: none; }
-  }
-</style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <div class="logo">Tech<span>Nova</span></div>
-  <ul class="nav-links">
-    <li><a href="#">Smartphones</a></li>
-    <li><a href="#">Ordinateurs</a></li>
-    <li><a href="#">Audio</a></li>
-    <li><a href="#">Accessoires</a></li>
-    <li><a href="#">Offres</a></li>
-  </ul>
-  <div class="nav-actions">
-    <button class="btn-cart" onclick="openCart()">
-      🛒 Panier <span class="cart-count" id="cartCount">0</span>
-    </button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<div style="background:var(--surface); border-bottom:1px solid var(--border);">
-  <div class="hero">
-    <div>
-      <div class="hero-eyebrow">Nouvelle collection 2025</div>
-      <h1>La tech qui change votre quotidien</h1>
-      <p>Smartphones, ordinateurs, audio — les meilleures marques aux meilleurs prix, livrés en 24h.</p>
-      <div class="hero-cta">
-        <button class="btn-primary">Découvrir les produits</button>
-        <button class="btn-secondary">Voir les offres</button>
-      </div>
-      <div class="hero-stats">
-        <div>
-          <div class="stat-value">+2 400</div>
-          <div class="stat-label">Produits disponibles</div>
-        </div>
-        <div>
-          <div class="stat-value">4.9★</div>
-          <div class="stat-label">Note clients</div>
-        </div>
-        <div>
-          <div class="stat-value">24h</div>
-          <div class="stat-label">Livraison express</div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-device">💻</div>
-      <div class="hero-badge">
-        <div class="dot-green"></div>
-        Stock disponible
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- MAIN -->
-<div class="main-container">
-
-  <!-- CATEGORIES -->
-  <div class="section-header">
-    <div class="section-title">Parcourir par catégorie</div>
-  </div>
-  <div class="categories">
-    <div class="cat-chip active" onclick="filterCat(this)">Tout voir</div>
-    <div class="cat-chip" onclick="filterCat(this)">📱 Smartphones</div>
-    <div class="cat-chip" onclick="filterCat(this)">💻 Ordinateurs</div>
-    <div class="cat-chip" onclick="filterCat(this)">🎧 Audio</div>
-    <div class="cat-chip" onclick="filterCat(this)">⌚ Montres</div>
-    <div class="cat-chip" onclick="filterCat(this)">📷 Caméras</div>
-    <div class="cat-chip" onclick="filterCat(this)">🎮 Gaming</div>
-  </div>
-
-  <!-- PRODUCTS -->
-  <div class="section-header">
-    <div class="section-title">Produits populaires</div>
-    <a href="#" class="see-all">Voir tout →</a>
-  </div>
-  <div class="products-grid" id="productsGrid">
-
-    <div class="product-card">
-      <div class="product-image">
-        📱
-        <div class="badge new">Nouveau</div>
-        <button class="wishlist-btn">♡</button>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Samsung</div>
-        <div class="product-name">Galaxy S25 Ultra 256Go</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(248)</span>
-        </div>
-        <div class="product-footer">
-          <div><span class="price">1 199 €</span></div>
-          <button class="add-btn" onclick="addToCart('Galaxy S25 Ultra')">+ Ajouter</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        💻
-        <div class="badge promo">−15%</div>
-        <button class="wishlist-btn">♡</button>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Apple</div>
-        <div class="product-name">MacBook Air M3 13"</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(512)</span>
-        </div>
-        <div class="product-footer">
-          <div><span class="price">1 099 €</span><span class="price-old">1 299 €</span></div>
-          <button class="add-btn" onclick="addToCart('MacBook Air M3')">+ Ajouter</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        🎧
-        <button class="wishlist-btn">♡</button>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Sony</div>
-        <div class="product-name">WH-1000XM6 Casque ANC</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(891)</span>
-        </div>
-        <div class="product-footer">
-          <div><span class="price">349 €</span></div>
-          <button class="add-btn" onclick="addToCart('Sony WH-1000XM6')">+ Ajouter</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        ⌚
-        <div class="badge new">Nouveau</div>
-        <button class="wishlist-btn">♡</button>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Apple</div>
-        <div class="product-name">Apple Watch Series 10</div>
-        <div class="product-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="rating-count">(337)</span>
-        </div>
-        <div class="product-footer">
-          <div><span class="price">449 €</span></div>
-          <button class="add-btn" onclick="addToCart('Apple Watch S10')">+ Ajouter</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        🎮
-        <div class="badge promo">−20%</div>
-        <button class="wishlist-btn">♡</button>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Sony</div>
-        <div class="product-name">PlayStation 5 Slim</div>
-        <div class="product-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-count">(1 204)</span>
-        </div>
-        <div class="product-footer">
-          <div><span class="price">399 €</span><span class="price-old">499 €</span></div>
-          <button class="add-btn" onclick="addToCart('PS5 Slim')">+ Ajouter</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        📷
-        <button class="wishlist-btn">♡</button>
-      </div>
-      <div class="product-info">
-        <div class="product-brand">Canon</div>
-        <div class="product-name">EOS R50 + 18-45mm Kit</div>
-        <div class="product-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="rating-count">(178)</span>
-        </div>
-        <div class="product-footer">
-          <div><span class="price">699 €</span></div>
-          <button class="add-btn" onclick="addToCart('Canon EOS R50')">+ Ajouter</button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- PROMO BANNER -->
-  <div class="promo-banner">
-    <div>
-      <h2>🔥 Offre spéciale de bienvenue</h2>
-      <p>Obtenez 10% de réduction sur votre première commande dès 150€ d'achat.</p>
-      <div class="promo-code">BIENVENUE10</div>
-    </div>
-    <button class="btn-white">J'en profite →</button>
-  </div>
-
-  <!-- FEATURES -->
-  <div class="features">
-    <div class="feature">
-      <div class="feature-icon">🚀</div>
-      <div class="feature-title">Livraison 24h</div>
-      <div class="feature-desc">Expédié le jour même pour toute commande avant 14h</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🔒</div>
-      <div class="feature-title">Paiement sécurisé</div>
-      <div class="feature-desc">Carte, PayPal, virement — 100% sécurisé</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">↩️</div>
-      <div class="feature-title">Retour 30 jours</div>
-      <div class="feature-desc">Satisfait ou remboursé, sans condition</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🛡️</div>
-      <div class="feature-title">Garantie 2 ans</div>
-      <div class="feature-desc">Tous nos produits sont garantis constructeur</div>
-    </div>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <strong>TechNova</strong> — Votre boutique électronique de confiance<br>
-  <span style="font-size:0.78rem; margin-top:0.5rem; display:block;">© 2025 TechNova. Tous droits réservés. · Mentions légales · CGV · Contact</span>
-</footer>
-
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<script>
-  let cartCount = 0;
-
-  funct
+<!-- BOUTON WHATSAPP FIXE -->
+<a href="https://wa.me/33619538517" class="whatsapp-btn" target="_blank
